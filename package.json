@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node src/loggers/benchmark.js",
-    "start": "forever src/server.js",
-    "cluster": "forever src/server.js --p 8080 --m CLUSTER",
-    "fork": "forever src/server.js --p 8080 --m FORK"
+    "start": "node src/server.js",
+    "cluster": "node src/server.js --p 8080 --m CLUSTER",
+    "fork": "node src/server.js --p 8080 --m FORK"
   },
   "repository": {
     "type": "git",
